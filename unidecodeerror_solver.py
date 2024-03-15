@@ -2,7 +2,7 @@ import charset_normalizer
     
 def encoding(path_to_file):
     
-    """Takes df and returns dict with language and encoding used  """
+    """Takes path of the dataframe and returns dict with language and encoding used  """
     with open(path_to_file,'rb')as raw_data:
     
         output_dict = charset_normalizer.detect(raw_data.read())
